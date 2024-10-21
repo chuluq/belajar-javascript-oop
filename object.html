@@ -10,15 +10,20 @@
       function Person() {
         this.firstName = "";
         this.lastName = "";
+        this.sayHello = function (name) {
+          console.info(`Hello ${name}, my name is ${this.firstName}`);
+        };
       }
 
       const chuluq = new Person();
       chuluq.firstName = "Choirul";
       chuluq.lastName = "Chuluq";
+      chuluq.sayHello("Joko");
 
       const budi = new Person();
       budi.firstName = "Budi";
       budi.lastName = "Nugraha";
+      budi.sayHello("Joko");
 
       console.log(chuluq);
       console.log(budi);
