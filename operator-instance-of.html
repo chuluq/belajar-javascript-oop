@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator instanceof</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+
+      class Manager extends Employee {}
+
+      const budi = new Employee();
+      const chuluq = new Manager();
+
+      console.info(budi instanceof Employee);
+      console.info(budi instanceof Manager);
+      console.info(chuluq instanceof Employee);
+      console.info(chuluq instanceof Manager);
+    </script>
+  </body>
+</html>
